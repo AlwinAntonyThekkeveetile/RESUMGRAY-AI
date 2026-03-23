@@ -174,8 +174,8 @@ const Resume = () => {
                     </section>
 
                     {/* Right panel — feedback */}
-                    <section className="feedback-section">
-                        <h2 className="text-4xl !text-black font-bold">Resume Review</h2>
+                    <section className="feedback-section px-4 md:px-8">
+                        <h2 className="text-3xl md:text-4xl !text-black font-bold">Resume Review</h2>
 
                         {loadingState === 'loading' && (
                             <div className="flex flex-col items-center gap-4 py-20">

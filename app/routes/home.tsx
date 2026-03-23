@@ -42,8 +42,8 @@ export default function Home() {
   return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
     <Navbar />
 
-    <section className="main-section">
-      <div className="page-heading py-16">
+    <section className="main-section px-4">
+      <div className="page-heading py-8 md:py-16">
         <h1>Track Your Applications & Resume Ratings</h1>
         {!loadingResumes && resumes?.length === 0 ? (
             <h2>No resumes found. Upload your first resume to get feedback.</h2>

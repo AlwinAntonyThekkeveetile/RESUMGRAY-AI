@@ -122,19 +122,19 @@ const Upload = () => {
         <main className="bg-[url('/images/bg-main.svg')] bg-cover">
             <Navbar />
 
-            <section className="main-section">
-                <div className="page-heading py-16">
+            <section className="main-section px-4">
+                <div className="page-heading py-8 md:py-16">
                     <h1>Smart feedback for your dream job</h1>
                     {isProcessing ? (
                         <>
-                            <h2>{statusText}</h2>
-                            <img src="/images/resume-scan.gif" className="w-full" />
+                            <h2 className="text-center">{statusText}</h2>
+                            <img src="/images/resume-scan.gif" className="w-full max-w-md mx-auto" />
                         </>
                     ) : (
-                        <h2>Drop your resume for an ATS score and improvement tips</h2>
+                        <h2 className="text-center">Drop your resume for an ATS score and improvement tips</h2>
                     )}
                     {!isProcessing && (
-                        <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">
+                        <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-6 mt-8 w-full max-w-2xl mx-auto">
                             <div className="form-div">
                                 <label htmlFor="company-name">Company Name</label>
                                 <input type="text" name="company-name" placeholder="Company Name" id="company-name" />
