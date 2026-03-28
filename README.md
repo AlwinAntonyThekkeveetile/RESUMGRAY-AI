@@ -1,1 +1,1 @@
-checkout the https://resumgray-ai.vercel.app
+checkout https://resumgray-ai.vercel.app
